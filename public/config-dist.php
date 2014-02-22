@@ -6,8 +6,8 @@ if ( !defined("IN_SCRIPT") ) {
 define("SESSION_KEY", "wwallet");
 define("SECRET_KEY", "ALFANUMERIC_CHARS_ONLY");
 define("DB_HOST", "localhost");
-define("DB_USER", "root");
-define("DB_PASS", "deneme");
+define("DB_USER", "MYSQL_DB_USERNAME");
+define("DB_PASS", "MYSQL_DB_USER_PASSWORD");
 define("DB_NAME", "swallet");
 define("S_TIMEZONE", "Europe/Istanbul");
 
