@@ -1,0 +1,42 @@
+#loading-mask{ position:absolute; left:0; top:0; width:100%; height:100%; z-index:20000; background-color:white; }
+#loading{ position:absolute; left:45%; top:40%; padding:2px; z-index:20001; height:auto; }
+#loading a { color:#225588; }
+#loading .loading-indicator{ background:white; color:#444; font:bold 13px tahoma,arial,helvetica; padding:10px; margin:0; height:auto; }
+#loading-msg { font: normal 10px arial,tahoma,sans-serif;}
+#app-header-bold{ color: #FF0000; font-size: 22px; font-weight: 200; text-shadow: 0 1px 0 #fff; margin-left:10px;}
+#app-header { color: #596F8F; font-size: 22px; font-weight: 200; text-shadow: 0 1px 0 #fff; margin-left:10px; }
+
+
+.icon-refresh{background-image:url(../images/icons/refresh.png)  !important}
+.icon-add{background-image:url(../images/icons/add16.png)  !important}
+.icon-delete{background-image:url(../images/icons/delete16.png)  !important}
+.icon-flush{background-image:url(../images/icons/flush16.png)  !important}
+.icon-orca{background-image:url(../images/icons/orca16.png)  !important}
+.icon-rpcserver{background-image:url(../images/icons/rpcserver16.png)  !important}
+.icon-exportcsv{background-image:url(../images/icons/exportcsv16.png)  !important}
+
+
+
+.icon-logout{background-image:url(../images/logout32.png)  !important}
+.icon-panic{background-image:url(../images/stop32.png)  !important}
+.icon-donate{background-image:url(../images/donate32.png)  !important}
+.icon-backup{background-image:url(../images/backup32.png)  !important}
+
+
+
+#panelsouth td { padding: 5px;}
+
+
+.icon-overview16{background-image:url(../images/icons/btc/overview16.png)  !important}
+.icon-send16{background-image:url(../images/icons/btc/send16.png)  !important}
+.icon-receive16{background-image:url(../images/icons/btc/receive16.png)  !important}
+.icon-transaction16{background-image:url(../images/icons/btc/transaction16.png)  !important}
+.icon-addressbook16{background-image:url(../images/icons/btc/addressbook16.png)  !important}
+.icon-statics16{background-image:url(../images/icons/btc/statics16.png)  !important}
+.icon-peer16{background-image:url(../images/icons/btc/peer16.png)  !important}
+/*overview icons*/
+.icon-walletinfo16{background-image:url(../images/icons/walletinfo16.png)  !important}
+.icon-accounts16{background-image:url(../images/icons/accounts16.png)  !important}
+.icon-money16{background-image:url(../images/icons/money16.png)  !important}
+
+
