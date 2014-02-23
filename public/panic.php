@@ -75,7 +75,7 @@ $pText.=_getPanicStatusText( $c );
 echo $pText;
 
 $pText="<tr><td>".($i+2)."</td><td>LOCAL DIR</td><td>Trying to Remove configuration file.</td><td>";
-$c=@unlink("xconfig.php");
+$c=@unlink("config.php");
 $pText.=_getPanicStatusText( $c );
 echo $pText.='</td></tr>';
 if ( !$c ) {
