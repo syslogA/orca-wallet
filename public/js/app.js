@@ -724,7 +724,7 @@ Ext.onReady(function() {
 				
 				Ext.create('Ext.container.Container', {
 					layout: { type: 'vbox', align: 'stretch' },
-					title: "Send/Muti Send", iconCls: 'icon-send16',
+					title: "Send/Multi Send", iconCls: 'icon-send16',
 					listeners: {
 						activate: function() {
 							var cmb= Ext.getCmp("FormSend"+_panelID).getForm().findField("sendTo");
