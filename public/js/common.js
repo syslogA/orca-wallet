@@ -1,5 +1,5 @@
 var scriptname="Orca Rpc Server Control Interface";
-var scriptver="0.0.1 Alpha";
+var scriptver="0.0.1 Beta";
 
 
 
@@ -14,7 +14,7 @@ function _getSelectedRowInGrid( gridID ) {
 	var grid=Ext.getCmp(gridID);
 	var s = grid.getSelectionModel().getSelection()[0];
 	if ( !s ) {
-		Ext.Msg.alert("Kayıt Seçmediniz!", "İşlemi yapabilmek için önce kayıt seçmeniz gerekmektedir.");
+		Ext.Msg.alert("No Record selected!", "You must select at least one record.");
 		return false;
 	}
 	return s.data;
@@ -24,24 +24,6 @@ function _getSelectedRowInGrid( gridID ) {
 function unixtime2date(val) {
 	var date = Ext.Date.parse(val, 'U');
 	return Ext.Date.format(date, 'd M Y H:i');
-}
-
-function loadBalance(serverID, panelID) {
-	var balanceDiv=Ext.getCmp('balance_'+panelID);
-	if ( !balanceDiv )
-		return false;
-	Ext.Ajax.request({
-		url: 'api2client.php?action=getbalance&serverID='+serverID,
-		success: function(response){
-			var result = Ext.JSON.decode(response.responseText);
-			if ( result.success ) {
-				balanceDiv.update( "<h2>Balance: "+result.root+"</h2>");
-			}
-			else {
-				balanceDiv.update( "<h2>Balance: #NAN</h2>");
-			}
-		}
-	});
 }
 
 
