@@ -967,9 +967,7 @@ Ext.onReady(function() {
 					features: [  { ftype: 'filters', local: true, encode: false } ],
 					columns: [
 						{ text: 'CONFIRM', dataIndex: 'confirmations', filterable: true, width: 30, filter: { type: 'numeric' }},
-						{ text: 'TIME RECEIVED', dataIndex: 'timereceived', flex:1, format: "d-M-Y",
-							filter: { type: 'date' }
-						},
+						{ text: 'TIME RECEIVED', dataIndex: 'timereceived', flex:1, filterable: true},
 						{text: 'TYPE', dataIndex: 'category', flex:1, filterable: true, width: 30},
 						{text: 'ACCOUNT', dataIndex: 'account', flex:1, filterable: true, width: 30 },
 						{text: 'ADDRESS', dataIndex: 'address', flex:1, filterable: true, width: 30},
