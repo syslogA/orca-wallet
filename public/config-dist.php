@@ -18,7 +18,7 @@ define("DEMO_MODE", false);
 
 
 define("SCRIPT_NAME", "Orca Rpc Server Control Interface");
-define("SCRIPT_VER", "0.0.1 Alpha");
+define("SCRIPT_VER", "0.0.1 Beta");
 
 define("DIR_SCRIPT", dirname(realpath(__FILE__)));
 define("DIR_LIB", DIR_SCRIPT."/lib/");
