@@ -82,9 +82,9 @@ else if ( $currentAction == "transactionlist" ) {
 		$n=count( $rpcOut->result );
 		for ( $i=0; $i<$n; $i++ ) {
 			if ( !empty( $rpcOut->result[$i]->time) )
-				$rpcOut->result[$i]->time = date("d M Y", $rpcOut->result[$i]->time);
+				$rpcOut->result[$i]->time = date("d-M-Y H:i:s", $rpcOut->result[$i]->time);
 			if ( !empty( $rpcOut->result[$i]->timereceived) )
-				$rpcOut->result[$i]->timereceived = date("d-M-Y", $rpcOut->result[$i]->timereceived);
+				$rpcOut->result[$i]->timereceived = date("d-M-Y H:i:s", $rpcOut->result[$i]->timereceived);
 			
 			
 			$rData[]=(array)$rpcOut->result[$i];
